@@ -1,7 +1,12 @@
-Redirecting to https://gphofficial.com in 5 seconds
+<p>Redirecting to https://gphofficial.com in <b id="time" >5</b> seconds</p>
 
 <script>
+	var time = 5;
 	setInterval(function(){ 
-		window.location.replace("https://gphofficial.com")
-	}, 5000);
+		time--;
+		document.getElementById('time').innerHTML = time;
+		if(time <= 0){
+			window.location.replace("https://gphofficial.com")
+		}
+	}, 1000);
 </script>
